@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+@font-face {
+    font-family: 'Greta Arabic';
+    src: url(./assets/fonts/greta.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --greta: 'Greta Arabic', serif;
+}
+
+body {
+    font-family: var(--greta);
+}

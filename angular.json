@@ -25,9 +25,21 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+
+              "./src/assets/dist/font-awesome/css/font-awesome.min.css",
+              "./src/assets/dist/adminlte/css/adminlte.min.css",
+              "./src/assets/dist/adminlte/css/bootstrap-rtl.min.css",
+              "./src/assets/dist/adminlte/css/custom-style.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+              
+              "./src/assets/dist/jquery/jquery.min.js",
+              "./src/assets/dist/bootstrap/js/bootstrap.bundle.min.js",
+              "./src/assets/dist/adminlte/js/adminlte.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -94,5 +106,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "13221741-c222-4fa6-8b11-ea4b3c082835"
   }
 }
