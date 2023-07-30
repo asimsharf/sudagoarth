@@ -15,6 +15,7 @@ import { ArticlesComponent } from './articles/articles.component';
 import { MenusComponent } from './menus/menus.component';
 import { SettingsComponent } from './settings/settings.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     ReportsComponent,
     ArticlesComponent,
     MenusComponent,
-    SettingsComponent
+    SettingsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

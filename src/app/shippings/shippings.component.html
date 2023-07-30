@@ -1,28 +1,39 @@
 <!-- Content Header (Page header) -->
 <div class="content-header">
-    <div class="container-fluid">
-        <div class="row mb-2">
-            <div class="col-sm-6">
-                <h1 class="m-0 text-dark">الشحن</h1>
-            </div>
-            <!-- /.col -->
-            <div class="col-sm-6">
-                <ol class="breadcrumb float-sm-left">
-                    <li class="breadcrumb-item">
-                        <a href="#">الرئيسية</a>
-                    </li>
-                    <li class="breadcrumb-item active">
-                        الشحن
-                    </li>
-                </ol>
-            </div>
-            <!-- /.col -->
+    <div class="container-fluid d-flex justify-content-between">
+        <div>
+            <h4 class="text-dark m-2">الشحن</h4>
         </div>
-        <!-- /.row -->
+        <div>
+            <button class="btn btn-sm btn-outline-secondary m-1" type="submit">
+                <i class="bi bi-search"></i>
+            </button>
+
+            <button class="btn btn-sm btn-outline-secondary m-1" onclick="clearFilter('/ShopmeAdmin/products')"
+                type="button">
+                <i class="bi bi-arrow-repeat"></i>
+            </button>
+
+            <label>
+                <input class="form-control" name="keyword" placeholder="إبحث بلإيميل أو الإسم" value="keyword"
+                    type="text" required />
+            </label>
+
+            <input name="sortField" value="sortField" type="hidden" />
+            <input name="sortDir" value="sortDir" type="hidden" />
+
+            <a class="btn btn-sm btn-outline-primary m-1" href="@{/products/new}"><i class="bi bi-plus"></i></a>
+            <a class="btn btn-sm btn-outline-warning m-1" href="@{/products/export/csv}"><i
+                    class="bi bi-filetype-csv"></i></a>
+            <a class="btn btn-sm btn-outline-success m-1" href="@{/products/export/excel}"><i
+                    class="bi bi-file-excel"></i></a>
+            <a class="btn btn-sm btn-outline-danger m-1" href="@{/products/export/pdf}"><i
+                    class="bi bi-file-pdf"></i></a>
+        </div>
     </div>
-    <!-- /.container-fluid -->
 </div>
 <!-- /.content-header -->
+
 
 <!-- Main content -->
 <div class="content">

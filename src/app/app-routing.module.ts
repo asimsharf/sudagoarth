@@ -11,8 +11,10 @@ import { ReportsComponent } from './reports/reports.component';
 import { ArticlesComponent } from './articles/articles.component';
 import { MenusComponent } from './menus/menus.component';
 import { SettingsComponent } from './settings/settings.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
+  {path: '', component: HomeComponent},
   { path: 'users', component: UsersComponent },
   { path: 'categories', component: CategoriesComponent },
   { path: 'brands', component: BrandsComponent },
